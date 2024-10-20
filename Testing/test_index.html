@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Vega-Lite Charts</title>
+    <meta charset="utf-8" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+
+    <style media="screen">
+        /* Add space between Vega-Embed links  */
+        .vega-actions a {
+            margin-right: 5px;
+        }
+    </style>
+    <h1>Vega-Lite, first 3 visualizations</h1>
+</head>
+
+<body>
+    <!-- Container for the visualization -->
+    <div id="vis1"></div>
+    <div id="vis2"></div>
+    <div id="vis3"></div>
+
+    <script>
+        // Assign the specification to a local variable viz_.
+        var viz1 = {
+            $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+            data: {
+                values: [
+                    { "a": "C", "b": 2 }, { "a": "C", "b": 7 }, { "a": "C", "b": 4 },
+                    { "a": "D", "b": 1 }, { "a": "D", "b": 2 }, { "a": "D", "b": 6 },
+                    { "a": "E", "b": 8 }, { "a": "E", "b": 4 }, { "a": "E", "b": 7 }
+                ]
+            },
+            mark: "bar",
+            encoding: {
+                x: { "field": "a", "type": "nominal" },
+                y: { "aggregate": "average", "field": "b", "type": "quantitative" }
+            }
+        }
+
+        var viz2 = {
+            $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+            data: {
+                values: [
+                    { "a": "C", "b": 2 }, { "a": "C", "b": 7 }, { "a": "C", "b": 4 },
+                    { "a": "D", "b": 1 }, { "a": "D", "b": 2 }, { "a": "D", "b": 6 },
+                    { "a": "E", "b": 8 }, { "a": "E", "b": 4 }, { "a": "E", "b": 7 }
+                ]
+            },
+            mark: "bar",
+            encoding: {
+                y: { "field": "a", "type": "nominal" },
+                x: { "aggregate": "average", "field": "b", "type": "quantitative" }
+            }
+        }
+
+        var viz3 = {
+            $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+            data: {
+                values: [
+                    { "a": "C", "b": 2 }, { "a": "C", "b": 7 }, { "a": "C", "b": 4 },
+                    { "a": "D", "b": 1 }, { "a": "D", "b": 2 }, { "a": "D", "b": 6 },
+                    { "a": "E", "b": 8 }, { "a": "E", "b": 4 }, { "a": "E", "b": 7 }
+                ]
+            },
+            mark: "bar",
+            encoding: {
+                y: { "field": "a", "type": "nominal" },
+                x: {
+                    "aggregate": "average", "field": "b", "type": "quantitative",
+                    "title": "Mean of b"
+                }
+            }
+        }
+
+        // Embed the visualization in the container with id `vis`
+        vegaEmbed('#vis1', viz1)
+        vegaEmbed('#vis2', viz2)
+        vegaEmbed('#vis3', viz3);
+    </script>
