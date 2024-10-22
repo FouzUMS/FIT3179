@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "australia-states.json",
+      "format": {
+        "type": "topojson",
+        "feature": "countries"
+      }
+    },
+    "transform": [{
+      "lookup": "properties.ste_iso3166",
+      "from": {
+        "data": {
+          "url": "state-prisoners.csv"
+        },
+        "key": "State",
+        "fields": ["Proportion"]
+      }
+    }],
+    "projection": {
+      "type": "mercator"
+    },
+    "mark": "geoshape",
+    "encoding": {
+      "color": {
+        "field": "proportion",
+        "type": "quantitative"
+      }
+    }
+  }
+  

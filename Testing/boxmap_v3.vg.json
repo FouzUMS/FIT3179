@@ -1,0 +1,107 @@
+
+$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+width: 800,
+height: 450,
+title: "Earthquakes of magnitude 4 or large between 4 Oct 2020 and 10 Oct 2020",
+data: {
+    "url": "https://raw.githubusercontent.com/danpham02/fit3179/main/js/STE_2016_AUST_COMPRESSED.topojson",
+    format: { type: "topojson", feature: "STE_2016_AUST" }
+}
+projection: {
+    { type: "equirectangular" },
+    center: { expr: "stateCoordinates.center" }
+}
+params: [
+{
+    name: "State",
+    value: "Australia",
+    bind: {
+        input: "select",
+        options: [
+            "Australia",
+            "NSW",
+            "Vic",
+            "Qld",
+            "SA",
+            "WA",
+            "Tas",
+            "NT",
+            "ACT"
+        ],
+        labels: [
+            "Australia",
+            "New South Wales",
+            "Victoria",
+            "Queensland",
+            "South Australia",
+            "Western Australia",
+            "Tasmania",
+            "Northern Territory",
+            "Australian Capital Territory"
+        ]
+    }
+},
+{
+    name: stateCoordinates,
+    value: { "center": [133, -28], "scale": 700 },
+    expr: "State == 'Australia' ? {center: [133, -28], scale: 1000} : State == 'NSW' ? {center: [147, -33], scale: 2500} : State == 'Vic' ? {center: [145, -37], scale: 3000} : State == 'Qld' ? {center: [144, -20], scale: 2000} : State == 'SA' ? {center: [135, -30], scale: 1800} : State == 'WA' ? {center: [121, -27], scale: 1500} : State == 'Tas' ? {center: [147, -42], scale: 3500} : State == 'NT' ? {center: [133, -19], scale: 2000} : State == 'ACT' ? {center: [149, -35], scale: 4000} : {center: [133, -28], scale: 1000}"
+},
+{
+    name: "Sector",
+    value: "All",
+    bind: {
+        input: "select",
+        options: ["All", "Public", "Private"],
+        labels: ["All Hospitals", "Public Hospitals", "Private Hospitals"]
+    }
+},
+{
+    name: "Zoom ",
+    value: 700,
+    bind: { input: "range", min: 700, max: 16000, step: 100 }
+}
+],
+layer: [
+{mark: {type: "geoshape", fill: "lightgray", stroke: "white"}},
+{
+data: {
+url: "https://raw.githubusercontent.com/danpham02/fit3179/main/data/myhospitals-contact-details.csv"
+},
+transform: [
+{
+filter: "(State == 'Australia' || datum.State == State) && (Sector == 'All' || datum.Sector == Sector)"
+}
+],
+mark: "circle",
+encoding: {
+longitude: {field: "Longitude"},
+latitude: {field: "Latitude"},
+size: {
+field: "Beds",
+type: "nominal",
+scale: {domain: ["<50", "50-99", "100-199", "200-500", ">500"]}
+},
+color: {
+field: "Sector",
+type: "nominal",
+scale: {
+domain: ["Public", "Private"],
+range: ["#17becf", "#bcbd22"]
+}
+},
+tooltip: [
+{field: "Hospital name", type: "nominal"},
+{field: "Beds", type: "nominal"},
+{field: "Sector", type: "nominal"},
+{field: "Description", type: "nominal"}
+]
+},
+title: {
+text: "Public and Private Hospital Locations in Australia",
+fontSize: 16,
+fontWeight: "bold",
+anchor: "middle"
+}
+}
+]
+}

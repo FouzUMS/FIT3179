@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "COVID-19 Active Cases (10 Oct 2020)",
+    "width": 800,
+    "height": 400,
+    "projection": {"type": "mercator"},
+    "data": {
+      "url": "australia-states.topojson",
+      "format": {"type": "topojson", "feature": "georef-australia-state-millesime"}
+    },
+    "transform": [
+      {
+        "lookup": "properties.NAME",
+        "from": {
+          "data": {
+            "url": "state-prisoner.csv"
+          },
+          "key": "Country",
+          "fields": ["Prisoners"]
+        }
+      },
+      {"calculate": "datum.Active + 0.1", "as": "Active Prisoners"}
+    ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+      "color": {
+        "field": "Active Perisoners",
+        "type": "quantitative",
+        "scale": {"type": "log"}
+      },
+      "tooltip": [
+        {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+        {"field": "Active", "type": "quantitative"}
+      ]
+    }
+  }

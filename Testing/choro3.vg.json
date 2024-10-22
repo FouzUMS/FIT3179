@@ -1,0 +1,101 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "height": 250,
+    "title": "Percentage of Individuals in Prison by State",
+    "data": {
+      "url": "australia-states.json",
+      "format": {
+        "type": "topojson",
+        "feature": "georef-australia-state-millesime"
+      }
+    },
+    "projection": {
+      "type": "equirectangular",
+      "scale": 400,  
+      "center": [140, -33],
+      "translate": [250, 175]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "geoshape",
+          "fill": "#d0e4f7"
+        }
+      },
+      {
+        "data": {
+          "graticule": {
+            "step": [10, 10]
+          }
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "lightgray",
+          "strokeWidth": 1
+        }
+      },
+      {
+        "mark": {
+          "type": "geoshape",
+          "fill": "lightgray",
+          "stroke": "white"
+        }
+      },
+      {
+        "transform": [
+          {
+            "lookup": "properties.ste_iso3166",
+            "from": {
+              "data": {
+                "url": "state-prisoners.csv",
+                "format": {
+                  "type": "csv"
+                }
+              },
+              "key": "State",
+              "fields": ["Proportion"]
+            }
+          }
+        ],
+        "selection": {
+          "hover": {
+            "type": "single",
+            "on": "mouseover",
+            "empty": "all",
+            "fields": ["properties.ste_iso3166"]
+          }
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "white",
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "color": {
+            "field": "__Data",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "lighttealblue"
+            },
+            "legend": {
+              "title": "Incarcerations (%)",
+              "labelLimit": 500,
+              "orient": "bottom"
+            }
+          },
+          "opacity": {
+            "condition": {
+              "selection": "hover",
+              "value": 1 
+            },
+            "value": 0.2
+          },
+          "tooltip": [
+            { "field": "properties.ste_iso3166", "type": "nominal", "title": "Region" },
+            { "field": "Recent Data", "type": "quantitative", "title": "Bachelor's Degree (%)" }
+          ]
+        }
+      }
+    ]
+  }

@@ -20,9 +20,10 @@
 
 <body>
     <!-- Container for the visualization -->
-    <div id="vis1"></div>
+    <div id="vis1"></div></br>
     <div id="vis2"></div>
-    <div id="vis3"></div>
+    <div id="vis3"></div></br>
+    <div id="vis4"></div>
 
     <script>
         // Assign the specification to a local variable viz_.
@@ -37,8 +38,8 @@
             },
             mark: "bar",
             encoding: {
-                x: { "field": "a", "type": "nominal" },
-                y: { "aggregate": "average", "field": "b", "type": "quantitative" }
+                x: { field: "a", type: "nominal" },
+                y: { aggregate: "average", field: "b", type: "quantitative" }
             }
         }
 
@@ -53,32 +54,24 @@
             },
             mark: "bar",
             encoding: {
-                y: { "field": "a", "type": "nominal" },
-                x: { "aggregate": "average", "field": "b", "type": "quantitative" }
+                y: { field: "a", type: "nominal" },
+                x: { aggregate: "average", field: "b", type: "quantitative" }
             }
         }
 
-        var viz3 = {
-            $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-            data: {
-                values: [
-                    { "a": "C", "b": 2 }, { "a": "C", "b": 7 }, { "a": "C", "b": 4 },
-                    { "a": "D", "b": 1 }, { "a": "D", "b": 2 }, { "a": "D", "b": 6 },
-                    { "a": "E", "b": 8 }, { "a": "E", "b": 4 }, { "a": "E", "b": 7 }
-                ]
-            },
-            mark: "bar",
-            encoding: {
-                y: { "field": "a", "type": "nominal" },
-                x: {
-                    "aggregate": "average", "field": "b", "type": "quantitative",
-                    "title": "Mean of b"
-                }
-            }
-        }
+        var viz3 = "viz3.json"
+        // var viz5 = "boxplot_1.vg.json";
+
+
+        var viz4 = "choro3.vg.json"
 
         // Embed the visualization in the container with id `vis`
         vegaEmbed('#vis1', viz1)
         vegaEmbed('#vis2', viz2)
-        vegaEmbed('#vis3', viz3);
+        vegaEmbed('#vis3', viz3)
+        vegaEmbed('#vis4', viz4)
+
+
+        // var specVis4 = ".6_advanced_examples/4_small_multiples.vg.json";
+        // vegaEmbed('#vis4', specVis4);
     </script>
