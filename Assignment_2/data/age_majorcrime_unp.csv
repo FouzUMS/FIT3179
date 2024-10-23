@@ -1,0 +1,193 @@
+﻿Age_group,Crime,Acts
+18 years,Homicide and related offences,7
+18 years,Acts intended to cause injury,75
+18 years,Sexual assault and related offences,16
+18 years,Dangerous/ negligent acts,7
+18 years,Abduction/ harassment ,0
+18 years,Robbery/ extortion,37
+18 years,Unlawful entry with intent,50
+18 years,Theft,8
+18 years,Fraud/ deception,3
+18 years,Illicit drug offences,4
+18 years,Weapons/ explosives ,4
+18 years,Property damage and environmental pollution,7
+18 years,Public order offences,0
+18 years,Traffic and vehicle regulatory offences,0
+18 years,Offences against justice,5
+18 years,Miscellaneous offences,0
+19 years,Homicide and related offences,19
+19 years,Acts intended to cause injury,161
+19 years,Sexual assault and related offences,32
+19 years,Dangerous/ negligent acts,25
+19 years,Abduction/ harassment ,9
+19 years,Robbery/ extortion,64
+19 years,Unlawful entry with intent,85
+19 years,Theft,18
+19 years,Fraud/ deception,0
+19 years,Illicit drug offences,15
+19 years,Weapons/ explosives ,8
+19 years,Property damage and environmental pollution,5
+19 years,Public order offences,0
+19 years,Traffic and vehicle regulatory offences,3
+19 years,Offences against justice,18
+19 years,Miscellaneous offences,0
+20–24 years,Homicide and related offences,194
+20–24 years,Acts intended to cause injury,1440
+20–24 years,Sexual assault and related offences,379
+20–24 years,Dangerous/ negligent acts,224
+20–24 years,Abduction/ harassment ,60
+20–24 years,Robbery/ extortion,535
+20–24 years,Unlawful entry with intent,452
+20–24 years,Theft,153
+20–24 years,Fraud/ deception,36
+20–24 years,Illicit drug offences,288
+20–24 years,Weapons/ explosives ,75
+20–24 years,Property damage and environmental pollution,65
+20–24 years,Public order offences,18
+20–24 years,Traffic and vehicle regulatory offences,14
+20–24 years,Offences against justice,284
+20–24 years,Miscellaneous offences,0
+25–29 years,Homicide and related offences,322
+25–29 years,Acts intended to cause injury,2141
+25–29 years,Sexual assault and related offences,606
+25–29 years,Dangerous/ negligent acts,308
+25–29 years,Abduction/ harassment ,96
+25–29 years,Robbery/ extortion,614
+25–29 years,Unlawful entry with intent,657
+25–29 years,Theft,251
+25–29 years,Fraud/ deception,48
+25–29 years,Illicit drug offences,711
+25–29 years,Weapons/ explosives ,143
+25–29 years,Property damage and environmental pollution,96
+25–29 years,Public order offences,23
+25–29 years,Traffic and vehicle regulatory offences,56
+25–29 years,Offences against justice,520
+25–29 years,Miscellaneous offences,4
+30–34 years,Homicide and related offences,479
+30–34 years,Acts intended to cause injury,2314
+30–34 years,Sexual assault and related offences,801
+30–34 years,Dangerous/ negligent acts,321
+30–34 years,Abduction/ harassment ,113
+30–34 years,Robbery/ extortion,505
+30–34 years,Unlawful entry with intent,695
+30–34 years,Theft,325
+30–34 years,Fraud/ deception,82
+30–34 years,Illicit drug offences,1080
+30–34 years,Weapons/ explosives ,175
+30–34 years,Property damage and environmental pollution,94
+30–34 years,Public order offences,31
+30–34 years,Traffic and vehicle regulatory offences,85
+30–34 years,Offences against justice,608
+30–34 years,Miscellaneous offences,13
+35–39 years,Homicide and related offences,439
+35–39 years,Acts intended to cause injury,1910
+35–39 years,Sexual assault and related offences,843
+35–39 years,Dangerous/ negligent acts,258
+35–39 years,Abduction/ harassment ,93
+35–39 years,Robbery/ extortion,360
+35–39 years,Unlawful entry with intent,614
+35–39 years,Theft,245
+35–39 years,Fraud/ deception,103
+35–39 years,Illicit drug offences,1060
+35–39 years,Weapons/ explosives ,163
+35–39 years,Property damage and environmental pollution,106
+35–39 years,Public order offences,29
+35–39 years,Traffic and vehicle regulatory offences,82
+35–39 years,Offences against justice,545
+35–39 years,Miscellaneous offences,17
+40–44 years,Homicide and related offences,433
+40–44 years,Acts intended to cause injury,1472
+40–44 years,Sexual assault and related offences,829
+40–44 years,Dangerous/ negligent acts,191
+40–44 years,Abduction/ harassment ,77
+40–44 years,Robbery/ extortion,225
+40–44 years,Unlawful entry with intent,491
+40–44 years,Theft,199
+40–44 years,Fraud/ deception,89
+40–44 years,Illicit drug offences,777
+40–44 years,Weapons/ explosives ,109
+40–44 years,Property damage and environmental pollution,82
+40–44 years,Public order offences,17
+40–44 years,Traffic and vehicle regulatory offences,55
+40–44 years,Offences against justice,429
+40–44 years,Miscellaneous offences,14
+45–49 years,Homicide and related offences,360
+45–49 years,Acts intended to cause injury,930
+45–49 years,Sexual assault and related offences,734
+45–49 years,Dangerous/ negligent acts,79
+45–49 years,Abduction/ harassment ,33
+45–49 years,Robbery/ extortion,131
+45–49 years,Unlawful entry with intent,324
+45–49 years,Theft,101
+45–49 years,Fraud/ deception,71
+45–49 years,Illicit drug offences,490
+45–49 years,Weapons/ explosives ,55
+45–49 years,Property damage and environmental pollution,50
+45–49 years,Public order offences,10
+45–49 years,Traffic and vehicle regulatory offences,40
+45–49 years,Offences against justice,296
+45–49 years,Miscellaneous offences,7
+50–54 years,Homicide and related offences,347
+50–54 years,Acts intended to cause injury,524
+50–54 years,Sexual assault and related offences,697
+50–54 years,Dangerous/ negligent acts,55
+50–54 years,Abduction/ harassment ,39
+50–54 years,Robbery/ extortion,77
+50–54 years,Unlawful entry with intent,152
+50–54 years,Theft,56
+50–54 years,Fraud/ deception,50
+50–54 years,Illicit drug offences,363
+50–54 years,Weapons/ explosives ,32
+50–54 years,Property damage and environmental pollution,37
+50–54 years,Public order offences,12
+50–54 years,Traffic and vehicle regulatory offences,28
+50–54 years,Offences against justice,179
+50–54 years,Miscellaneous offences,6
+55–59 years,Homicide and related offences,255
+55–59 years,Acts intended to cause injury,206
+55–59 years,Sexual assault and related offences,555
+55–59 years,Dangerous/ negligent acts,24
+55–59 years,Abduction/ harassment ,15
+55–59 years,Robbery/ extortion,23
+55–59 years,Unlawful entry with intent,44
+55–59 years,Theft,23
+55–59 years,Fraud/ deception,37
+55–59 years,Illicit drug offences,207
+55–59 years,Weapons/ explosives ,15
+55–59 years,Property damage and environmental pollution,17
+55–59 years,Public order offences,3
+55–59 years,Traffic and vehicle regulatory offences,13
+55–59 years,Offences against justice,80
+55–59 years,Miscellaneous offences,0
+60–64 years,Homicide and related offences,188
+60–64 years,Acts intended to cause injury,74
+60–64 years,Sexual assault and related offences,416
+60–64 years,Dangerous/ negligent acts,13
+60–64 years,Abduction/ harassment ,7
+60–64 years,Robbery/ extortion,8
+60–64 years,Unlawful entry with intent,10
+60–64 years,Theft,11
+60–64 years,Fraud/ deception,22
+60–64 years,Illicit drug offences,107
+60–64 years,Weapons/ explosives ,3
+60–64 years,Property damage and environmental pollution,3
+60–64 years,Public order offences,0
+60–64 years,Traffic and vehicle regulatory offences,3
+60–64 years,Offences against justice,37
+60–64 years,Miscellaneous offences,3
+65 years and over,Homicide and related offences,244
+65 years and over,Acts intended to cause injury,31
+65 years and over,Sexual assault and related offences,915
+65 years and over,Dangerous/ negligent acts,4
+65 years and over,Abduction/ harassment ,6
+65 years and over,Robbery/ extortion,9
+65 years and over,Unlawful entry with intent,6
+65 years and over,Theft,8
+65 years and over,Fraud/ deception,39
+65 years and over,Illicit drug offences,101
+65 years and over,Weapons/ explosives ,10
+65 years and over,Property damage and environmental pollution,5
+65 years and over,Public order offences,3
+65 years and over,Traffic and vehicle regulatory offences,0
+65 years and over,Offences against justice,38
+65 years and over,Miscellaneous offences,9
