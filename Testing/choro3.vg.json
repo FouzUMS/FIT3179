@@ -4,10 +4,10 @@
     "height": 250,
     "title": "Percentage of Individuals in Prison by State",
     "data": {
-      "url": "australia-states.json",
+      "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/STE_2021_AUST_GDA2020.json",
       "format": {
         "type": "topojson",
-        "feature": "georef-australia-state-millesime"
+        "feature": "STE_2021_AUST_GDA2020"
       }
     },
     "projection": {
@@ -45,16 +45,16 @@
       {
         "transform": [
           {
-            "lookup": "properties.ste_iso3166",
+            "lookup": "properties.STE_NAME21",
             "from": {
               "data": {
-                "url": "state-prisoners.csv",
+                "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/state-prisoners.csv",
                 "format": {
                   "type": "csv"
                 }
               },
               "key": "State",
-              "fields": ["Proportion"]
+              "fields": ["Prisoners"]
             }
           }
         ],
@@ -63,7 +63,7 @@
             "type": "single",
             "on": "mouseover",
             "empty": "all",
-            "fields": ["properties.ste_iso3166"]
+            "fields": ["properties.STE_NAME21"]
           }
         },
         "mark": {
