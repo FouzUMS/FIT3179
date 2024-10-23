@@ -1,0 +1,105 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "title": "Australian Prisoners by State",
+    "params": [
+        {
+            "name": "yearSelector",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "2013",
+                    "2014",
+                    "2015",
+                    "2016",
+                    "2017",
+                    "2018",
+                    "2019",
+                    "2020",
+                    "2021",
+                    "2022",
+                    "2023"
+                ],
+                "labels": [
+                    "2013",
+                    "2014",
+                    "2015",
+                    "2016",
+                    "2017",
+                    "2018",
+                    "2019",
+                    "2020",
+                    "2021",
+                    "2022",
+                    "2023"
+                ],
+                "name": "Select Year: "
+            }
+        }
+    ],
+    "data": 
+    {
+        "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/states_and_years.csv"
+    }
+    ,
+    "transform": [
+        {
+            "lookup": "State",
+            "from": {
+                "data":
+                {
+        
+                    "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/STE_2021_AUST_GDA2020.json",
+                    "format": {
+                        "type": "topojson",
+                        "feature": "STE_2021_AUST_GDA2020"
+                    }
+                },
+                "key": "properties.STE_NAME21",
+                "fields": [
+                    "State",
+                    "Year",
+                    "Total prisoners"
+                ]
+            }
+        },
+        {
+            "filter": "datum.Year == yearSelector"
+    },
+    {
+        "calculate": "datum.Year",
+        "as": "yearDebug"
+    }
+    ],
+    "projection": {
+        "type": "mercator"
+    },
+    "mark": {
+        "type": "geoshape",
+        "stroke": "white"
+    },
+    "encoding": {
+        "color": {
+            "field": "Total prisoners",
+            "type": "quantitative",
+            "scale": {
+                "scheme": "purples"
+            }
+        },
+        "tooltip": [
+            {
+                "field": "State",
+                "title": "State"
+            },
+            {
+                "field": "Total prisoners",
+                "title": "Total Prisoners"
+            },
+    {
+        "field": "yearDebug",
+        "title": "Year"
+    }
+        ]
+    }
+}

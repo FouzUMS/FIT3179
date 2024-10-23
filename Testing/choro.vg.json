@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 500,
-  "height": 300,
+  "width": 600,
+  "height": 400,
+  "title": "Australian Prisoners by State",
   "data": {
     "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/STE_2021_AUST_GDA2020.json",
     "format": {
@@ -9,25 +10,119 @@
       "feature": "STE_2021_AUST_GDA2020"
     }
   },
-  "transform": [{
-    "lookup": "properties.STE_NAME21",
-    "from": {
-      "data": {
-        "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/state-prisoners.csv"
-      },
-      "key": "State",
-      "fields": ["Proportion"]
+  "transform": [
+    {
+      "lookup": "properties.STE_NAME21",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/states_and_years.csv"
+        },
+        "key": "State",
+        "fields": ["State", "Year", "Total prisoners"]
+      }
+    },
+    {
+      "filter": "datum.Year == yearSelector"
     }
-  }
   ],
   "projection": {
     "type": "mercator"
   },
-  "mark": "geoshape",
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white"
+  },
   "encoding": {
     "color": {
-      "field": "Proportion",
-      "type": "quantitative"
+      "field": "Total prisoners",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {"field": "State", "title": "State"},
+      {"field": "Total prisoners", "title": "Total Prisoners"}
+    ]
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2013,
+        "max": 2023,
+        "step": 1,
+        "name": "Select Year: "
+      }
     }
-  }
+  ]
 }
+
+
+// {
+//   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+//   "width": 500,
+//   "height": 300,
+//   "data": {
+//     "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/STE_2021_AUST_GDA2020.json",
+//     "format": {
+//       "type": "topojson",
+//       "feature": "STE_2021_AUST_GDA2020"
+//     }
+//   },
+//   "transform": [
+//     {
+//       "lookup": "properties.STE_NAME21",
+//       "from": {
+//         "data": {
+//           "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/state-prisoners.csv"
+//         },
+//         "key": "State",
+//         "fields": [
+//           "Proportion"
+//         ]
+//       }
+//     }
+//   ],
+//   "projection": {
+//     "type": "mercator"
+//   },
+//   "mark": "geoshape",
+//   "encoding": {
+//     "color": {
+//       "field": "Proportion",
+//       "type": "quantitative"
+//     }
+//   },
+//   "params": [
+//     {
+//       "name": "State",
+//       "value": "Australia",
+//       "bind": {
+//         "input": "select",
+//         "options": [
+//           "NSW",
+//           "Vic",
+//           "Qld",
+//           "SA",
+//           "WA",
+//           "Tas",
+//           "NT",
+//           "ACT"
+//         ],
+//         "labels": [
+//           "New South Wales",
+//           "Victoria",
+//           "Queensland",
+//           "South Australia",
+//           "Western Australia",
+//           "Tasmania",
+//           "Northern Territory",
+//           "Australian Capital Territory"
+//         ]
+//       }
+//     }
+//   ]
+// }
