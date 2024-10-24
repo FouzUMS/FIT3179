@@ -1,0 +1,145 @@
+﻿State,Crime,Sentence_mean
+New South Wales,01 Homicide and related offences,21.6
+New South Wales,02 Acts intended to cause injury,3.1
+New South Wales,03 Sexual assault and related offences,10.1
+New South Wales,04 Dangerous/negligent acts,2.4
+New South Wales,05 Abduction/harassment ,6.1
+New South Wales,06 Robbery/extortion,6.3
+New South Wales,07 Unlawful entry with intent,2.9
+New South Wales,08 Theft,1.7
+New South Wales,09 Fraud/deception,3.3
+New South Wales,10 Illicit drug offences,8.4
+New South Wales,11 Weapons/explosives ,4.2
+New South Wales,12 Property damage and environmental pollution,3.1
+New South Wales,13 Public order offences,2.1
+New South Wales,14 Traffic and vehicle regulatory offences,0.9
+New South Wales,15 Offences against justice,1.5
+New South Wales,16 Miscellaneous offences,8.7
+Victoria,01 Homicide and related offences,17.0
+Victoria,02 Acts intended to cause injury,3.6
+Victoria,03 Sexual assault and related offences,8.7
+Victoria,04 Dangerous/negligent acts,2.1
+Victoria,05 Abduction/harassment ,5.0
+Victoria,06 Robbery/extortion,4.6
+Victoria,07 Unlawful entry with intent,3.6
+Victoria,08 Theft,1.8
+Victoria,09 Fraud/deception,3.3
+Victoria,10 Illicit drug offences,8.0
+Victoria,11 Weapons/explosives ,2.2
+Victoria,12 Property damage and environmental pollution,4.8
+Victoria,13 Public order offences,1.4
+Victoria,14 Traffic and vehicle regulatory offences,0.9
+Victoria,15 Offences against justice,2.3
+Victoria,16 Miscellaneous offences,3.0
+Queensland,01 Homicide and related offences,11.5
+Queensland,02 Acts intended to cause injury,3.3
+Queensland,03 Sexual assault and related offences,7.2
+Queensland,04 Dangerous/negligent acts,3.4
+Queensland,05 Abduction/harassment ,3.8
+Queensland,06 Robbery/extortion,5.5
+Queensland,07 Unlawful entry with intent,3.5
+Queensland,08 Theft,2.0
+Queensland,09 Fraud/deception,3.7
+Queensland,10 Illicit drug offences,6.0
+Queensland,11 Weapons/explosives ,2.5
+Queensland,12 Property damage and environmental pollution,3.1
+Queensland,13 Public order offences,1.1
+Queensland,14 Traffic and vehicle regulatory offences,1.3
+Queensland,15 Offences against justice,1.2
+Queensland,16 Miscellaneous offences,
+South Australia,01 Homicide and related offences,9.2
+South Australia,02 Acts intended to cause injury,4.5
+South Australia,03 Sexual assault and related offences,9.5
+South Australia,04 Dangerous/negligent acts,4.1
+South Australia,05 Abduction/harassment ,9.6
+South Australia,06 Robbery/extortion,6.7
+South Australia,07 Unlawful entry with intent,5.1
+South Australia,08 Theft,3.1
+South Australia,09 Fraud/deception,4.9
+South Australia,10 Illicit drug offences,6.4
+South Australia,11 Weapons/explosives ,5.4
+South Australia,12 Property damage and environmental pollution,4.0
+South Australia,13 Public order offences,4.8
+South Australia,14 Traffic and vehicle regulatory offences,0.9
+South Australia,15 Offences against justice,2.2
+South Australia,16 Miscellaneous offences,1.9
+Western Australia,01 Homicide and related offences,9.0
+Western Australia,02 Acts intended to cause injury,2.6
+Western Australia,03 Sexual assault and related offences,7.2
+Western Australia,04 Dangerous/negligent acts,2.8
+Western Australia,05 Abduction/harassment ,3.1
+Western Australia,06 Robbery/extortion,4.3
+Western Australia,07 Unlawful entry with intent,2.9
+Western Australia,08 Theft,2.5
+Western Australia,09 Fraud/deception,2.9
+Western Australia,10 Illicit drug offences,7.0
+Western Australia,11 Weapons/explosives ,2.2
+Western Australia,12 Property damage and environmental pollution,3.2
+Western Australia,13 Public order offences,3.8
+Western Australia,14 Traffic and vehicle regulatory offences,0.9
+Western Australia,15 Offences against justice,1.4
+Western Australia,16 Miscellaneous offences,4.1
+Tasmania,01 Homicide and related offences,22.4
+Tasmania,02 Acts intended to cause injury,3.3
+Tasmania,03 Sexual assault and related offences,7.1
+Tasmania,04 Dangerous/negligent acts,2.2
+Tasmania,05 Abduction/harassment ,0.0
+Tasmania,06 Robbery/extortion,4.6
+Tasmania,07 Unlawful entry with intent,0.8
+Tasmania,08 Theft,1.4
+Tasmania,09 Fraud/deception,2.2
+Tasmania,10 Illicit drug offences,3.8
+Tasmania,11 Weapons/explosives ,1.5
+Tasmania,12 Property damage and environmental pollution,2.0
+Tasmania,13 Public order offences,2.9
+Tasmania,14 Traffic and vehicle regulatory offences,0.5
+Tasmania,15 Offences against justice,2.2
+Tasmania,16 Miscellaneous offences,0.0
+Northern Territory,01 Homicide and related offences,10.4
+Northern Territory,02 Acts intended to cause injury,2.0
+Northern Territory,03 Sexual assault and related offences,8.0
+Northern Territory,04 Dangerous/negligent acts,2.9
+Northern Territory,05 Abduction/harassment ,1.4
+Northern Territory,06 Robbery/extortion,4.3
+Northern Territory,07 Unlawful entry with intent,2.6
+Northern Territory,08 Theft,2.9
+Northern Territory,09 Fraud/deception,0.0
+Northern Territory,10 Illicit drug offences,5.0
+Northern Territory,11 Weapons/explosives ,1.0
+Northern Territory,12 Property damage and environmental pollution,1.7
+Northern Territory,13 Public order offences,1.1
+Northern Territory,14 Traffic and vehicle regulatory offences,0.6
+Northern Territory,15 Offences against justice,1.3
+Northern Territory,16 Miscellaneous offences,0.0
+Australia Capital Territory,01 Homicide and related offences,18.5
+Australia Capital Territory,02 Acts intended to cause injury,6.5
+Australia Capital Territory,03 Sexual assault and related offences,9.7
+Australia Capital Territory,04 Dangerous/negligent acts,3.1
+Australia Capital Territory,05 Abduction/harassment ,0.0
+Australia Capital Territory,06 Robbery/extortion,6.9
+Australia Capital Territory,07 Unlawful entry with intent,4.2
+Australia Capital Territory,08 Theft,1.2
+Australia Capital Territory,09 Fraud/deception,n.p.
+Australia Capital Territory,10 Illicit drug offences,6.2
+Australia Capital Territory,11 Weapons/explosives ,3.4
+Australia Capital Territory,12 Property damage and environmental pollution,3.9
+Australia Capital Territory,13 Public order offences,0.0
+Australia Capital Territory,14 Traffic and vehicle regulatory offences,0.0
+Australia Capital Territory,15 Offences against justice,1.9
+Australia Capital Territory,16 Miscellaneous offences,0.0
+Australia,01 Homicide and related offences,17.3
+Australia,02 Acts intended to cause injury,3.1
+Australia,03 Sexual assault and related offences,8.7
+Australia,04 Dangerous/negligent acts,2.8
+Australia,05 Abduction/harassment ,5.1
+Australia,06 Robbery/extortion,5.3
+Australia,07 Unlawful entry with intent,3.3
+Australia,08 Theft,2.0
+Australia,09 Fraud/deception,3.4
+Australia,10 Illicit drug offences,7.2
+Australia,11 Weapons/explosives ,3.3
+Australia,12 Property damage and environmental pollution,3.3
+Australia,13 Public order offences,2.6
+Australia,14 Traffic and vehicle regulatory offences,0.9
+Australia,15 Offences against justice,1.6
+Australia,16 Miscellaneous offences,4.5
